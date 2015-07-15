@@ -1,0 +1,261 @@
+@font-face{
+	font-family: CollegeFont;
+	font-weight: bold;
+	src: url("bauble/Infinity.ttf");
+}
+@font-face{
+	font-family: SemFont;
+	font-weight: bold;
+	src: url("bauble/Zag_Regular.otf");
+}
+@font-face{
+	font-family: PanelFont;
+	src: url("bauble/Barkentina.otf");
+}
+@font-face{
+	font-family: DetailFont;
+	src: url("bauble/Lavanderia.otf");
+}
+@font-face{
+	font-family: Footer;
+	src: url("bauble/Vera.ttf");
+}
+*{
+	padding: 0px;
+	margin: 0px;
+	cursor: default;
+	text-decoration: none;
+	color: default;
+}
+.entire{
+	cursor: wait;
+}
+body{
+	background: url("bauble/little_pluses.png") repeat scroll 0 0 #CFCFCF;
+}
+#header h1{
+	font-family: CollegeFont;
+	font-stretch: expanded;
+	font-size: 49px;
+	padding-top: 10px;
+	color: #FFF;
+}
+#header h2{
+	font-family: SemFont;
+	font-size: 28px;
+	color: #DDD;
+	padding-bottom: 20px;
+}
+#header{
+	width: auto !important;
+	min-width: 750px;
+	margin-left:auto;
+	margin-right:auto;
+	background: url("bauble/blackorchid.png") repeat scroll 0 0 #000;
+	clear:both;
+}
+#pane{
+	width: auto !important;
+	min-width: 750px;
+	background: url("bauble/subtle_carbon.png") repeat scroll 0 0 #000;
+	font-family: PanelFont;
+	list-style-type: none;
+	color: #444;
+	line-height: 40px;
+	clear: both;
+}
+#pane span{	padding: 20px;}
+#pane #focus{	color: #FFF;}
+#header .star{	visibility: hidden; font-size: 40px;}
+#header h1:hover{	color: #F63;}
+#header h1:hover .star{	visibility: visible;}
+#content{
+	width:750px;
+	height: auto !important;
+	min-height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 22px solid #F75;
+	background: url("bauble/greycircle.jpg") repeat scroll 0 0 #CFCFCF;
+    clear:both;
+}
+#content #staffcenter{ 
+	width: 100px; 
+	float: left;
+	margin-left:auto !important; 
+	border: solid black; 
+	border-width:2px;
+	border-top-width: 0px;
+}
+#content #staff a:link{	color: #F34; text-decoration: underline;}
+#content #staff a:visited{	color: #F34; text-decoration: underline;}
+#content #staff a:hover{	color: #FFF; text-decoration:none; cursor:pointer;}
+#content #staff p{
+	width: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #FFF;
+	line-height: 23px;
+}
+#content #staff p:hover{
+	background-color: #F11;
+	cursor:pointer;
+}
+/**/
+#content #restartcenter{ 
+	width: 100px; 
+	float: right;
+	margin-left:auto !important; 
+	border: solid black; 
+	border-width:2px;
+	border-top-width: 0px;
+}
+#content #restart a:link{	color: #F34; text-decoration: underline;}
+#content #restart a:visited{	color: #F34; text-decoration: underline;}
+#content #restart a:hover{	color: #FFF; text-decoration:none; cursor:pointer;}
+#content #restart p{
+	width: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #FFF;
+	line-height: 23px;
+}
+/*Identifiers taken:
+header, pane, content, focus, restartcenter, restart, main
+desc, hdesc;
+#label and border of #button color: #399630;
+*/
+#content #restart p:hover{
+	background-color: #F11;
+	cursor:pointer;
+}
+#content .guide{
+	width: 90%;
+	margin-bottom: 5px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	text-align: Left;
+	background-image: url('bauble/skelatal_weave.png');
+	border: 1px solid black;
+}
+#content .guidea{
+	display: none;
+	visibility: hidden;
+}
+#content .desc{
+	width: 70%;
+	margin-bottom: 5px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	text-align: left;
+	background-image: url('bauble/subtlenet.png');
+	border: 1px solid black;
+	border-top-width: 0px;
+}
+#content .desc #hdesc{
+	text-align: center;
+}
+#content .guide #hdesc{
+	text-align: center;
+}
+#content .descfont{
+	font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+}
+.detail{
+	font-family: DetailFont;
+}
+.error{
+	color: red;
+}
+.correct{
+	color: blue;
+}
+.fulfil{
+	color: green;
+}
+#content #main{
+	padding-left:0px;
+}
+#content #main #label{  
+
+width: auto;
+display: inline-block;
+margin: 5px;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+color: #000;
+font-size: 18px;
+
+}
+#content #main .button, #content #main #input, #content #main #input2 {  
+
+display:inline-block;
+padding:5px;
+border-radius:5px;
+font-family: Arimo, Verdana, Arial, Helvetica, sans-serif;
+background:#e4e2ce;
+margin-top: 10px;
+cursor: pointer;
+border:2px solid #000;
+}
+
+#content #main .button:hover{
+background: #FFF;
+}
+#content #main #input, #content #main #input2{
+	background: #FFF;
+	cursor: text;
+}
+select{
+	clear: both;
+}
+#cuSK{
+	float: right;
+	width: 115px;
+}
+#footer{
+	position: fixed; 
+	bottom: 0px;
+	padding: 3px;
+	font-family: Footer;
+	font-size:12;
+	width: 100%;
+	min-width: 750px;
+	background: #000;
+	background-image: url('bauble/asfalt.png');
+	color: #696969;
+}
+#footer .footcontent{
+	width: 100% !important;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.footcontent .foofighter{
+	color:#FFF; 
+	border-top: 1px solid #822; 
+	border-bottom: 1px solid #822;
+}
+.footcontent .foofighter:hover{
+	border-top: 1px dashed #696969;
+	border-bottom: 1px dashed #696969;
+	color: #F63;
+}
+#cuSK:hover .foofighter{
+	border-top: 1px dotted #A9A9A9;
+	border-bottom: 1px dotted #A9A9A9;
+	color: #FFF;
+	font-weight: bold;
+}
+/*
+***Thin or good Fonts
+Anand Institute of Higher Technology
+Semester Examination Seating Planner
+***numbers ministry
+Date
+***Calligraphy
+Details - from pdf details
+*/

@@ -1,0 +1,5 @@
+This is the final version of my project to arrange seatings for students automatically.
+The project is purely PHP based and it's made in a way that it doesn't require even MySQL.
+MySQL is neglected by creating and handling temporary files in settings folder.
+If the PHP files are not running download and view the sample input and output files to understand the overall process very breifly.
+The sample input and output files are included in the example folder!
